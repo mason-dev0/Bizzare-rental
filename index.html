@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BizarreRental® — Bizarre Animals, For Every Occasion</title>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- floating mascot indicator (sits above active nav item) -->
+<div class="mascot-badge" id="mascotBadge" aria-hidden="true">
+  <svg viewBox="0 0 40 40" width="22" height="22">
+    <g fill="none" stroke="#1B3B54" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 28c0-8 4-14 6-16"/>
+      <path d="M14 12c1-3 3-4 5-4s4 1 5 4"/>
+      <circle cx="19" cy="10" r="1.4" fill="#1B3B54" stroke="none"/>
+      <path d="M12 28c0-6 3-11 7-12 4 1 7 6 7 12"/>
+      <path d="M12 28l-2 6M26 28l2 6M17 28l0 6M22 28l0 6"/>
+    </g>
+  </svg>
+</div>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header">
+  <div class="nav-shell">
+    <a href="#/home" class="brand" data-nav>
+      <svg viewBox="0 0 40 40" width="26" height="26" class="brand-icon">
+        <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 28c0-8 4-14 6-16"/>
+          <path d="M14 12c1-3 3-4 5-4s4 1 5 4"/>
+          <circle cx="19" cy="10" r="1.3" fill="currentColor" stroke="none"/>
+          <path d="M12 28c0-6 3-11 7-12 4 1 7 6 7 12"/>
+        </g>
+      </svg>
+      BizarreRental<sup>®</sup>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#/home" data-nav data-page="home">Home</a>
+      <a href="#/roster" data-nav data-page="roster">Our Roster</a>
+      <a href="#/pricing" data-nav data-page="pricing">Pricing</a>
+      <a href="#/about" data-nav data-page="about">About Us</a>
+      <a href="#/faq" data-nav data-page="faq">FAQ</a>
+      <a href="#/book" data-nav data-page="book">Book Now</a>
+    </nav>
+    <a href="#/donate" class="donate-pill" data-nav data-page="donate">Donate</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#/home" data-nav data-page="home">Home</a>
+    <a href="#/roster" data-nav data-page="roster">Our Roster</a>
+    <a href="#/pricing" data-nav data-page="pricing">Pricing</a>
+    <a href="#/about" data-nav data-page="about">About Us</a>
+    <a href="#/faq" data-nav data-page="faq">FAQ</a>
+    <a href="#/book" data-nav data-page="book">Book Now</a>
+    <a href="#/donate" data-nav data-page="donate">Donate</a>
+  </div>
+</header>
+
+<main id="app">
+
+<!-- ============ HOME ============ -->
+<section class="page" id="page-home" data-page="home">
+
+  <div class="hero-wrap reveal">
+    <div class="hero-blob">
+      <h1>Bizarre Animals,<br>For Every Occasion</h1>
+      <p class="hero-sub">Trusted by 40,000+ Customers Worldwide</p>
+      <p class="hero-stats">85 options &nbsp;·&nbsp; 39 years in business &nbsp;·&nbsp; 4.9★ rating</p>
+      <div class="hero-ctas">
+        <a href="#/book" class="btn btn-solid" data-nav>Book a Companion</a>
+        <a href="#/roster" class="btn btn-outline" data-nav>Meet the Roster</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="ad-slot ad-leaderboard reveal" aria-label="Advertisement">
+    <span class="ad-tag">Advertisement</span>
+    <span class="ad-dims">728 × 90</span>
+    <span class="ad-cta">Ad slot — replace with your ad network's code</span>
+  </div>
+
+  <div class="why-section">
+    <div class="why-intro reveal">
+      <p class="eyebrow">Why BizarreRental?</p>
+      <h2>The Premier Choice for Discerning Exotic Renters</h2>
+      <p class="why-copy">Since 1987, we've connected thousands of satisfied customers with our world-class peculiar companions. Every rental comes with our Satisfaction Guarantee.</p>
+    </div>
+    <div class="divider-vert"></div>
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <span class="why-icon">🩺</span>
+        <h3>Fully Health-Certified</h3>
+        <p>Every animal in our fleet receives bi-weekly veterinary checks. Skin hydration, wing spans, and emotional stability — we cover it all.</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-icon">🎓</span>
+        <h3>Professionally Trained</h3>
+        <p>Our animals complete a rigorous 18-month social training program covering etiquette, crowd manners, and light bookkeeping.</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-icon">🚗</span>
+        <h3>White-Glove Delivery</h3>
+        <p>We deliver your companion in our climate-controlled luxury van. Specialized misting systems and snack bars included.</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-icon">📋</span>
+        <h3>Fully Licensed &amp; Insured</h3>
+        <p>We hold all required state and federal permits. Our $2M liability policy covers property damage, staring-related anxiety, and lettuce delivery incidents.</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-icon">🌿</span>
+        <h3>Sustainably Sourced</h3>
+        <p>We work exclusively with accredited sanctuaries. 15% of all rental proceeds fund global rainforest and swamp conservation.</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-icon">📞</span>
+        <h3>24/7 Weirdness Hotline</h3>
+        <p>Our expert handlers are on call around the clock. If your capybara takes over your hot tub indefinitely, we're one call away.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-cta-strip reveal">
+    <h2>Ready to add some weird to your next event?</h2>
+    <a href="#/book" class="btn btn-solid" data-nav>Start Booking</a>
+  </div>
+
+</section>
+
+<!-- ============ OUR ROSTER ============ -->
+<section class="page" id="page-roster" data-page="roster">
+  <div class="page-heading reveal">
+    <p class="eyebrow">Our Roster</p>
+    <h1>85 Companions. Zero Ordinary Ones.</h1>
+    <p class="page-sub">Meet a few of our most-requested bizarre companions below.</p>
+  </div>
+
+  <div class="roster-grid">
+
+    <article class="roster-card reveal">
+      <div class="roster-photo"><img src="images/emperor-tamarin.webp" alt="Sir Higgins the Emperor Tamarin" loading="lazy"></div>
+      <div class="roster-body">
+        <div class="roster-title-row">
+          <h3>Sir Higgins <span class="age">Age 6</span></h3>
+          <span class="price">$320/day</span>
+        </div>
+        <p class="species">Emperor Tamarin</p>
+        <p class="desc">Immaculate white mustache; ideal for audits, board meetings and high-stakes poker.</p>
+        <button class="btn btn-small btn-outline" data-book="Sir Higgins the Emperor Tamarin">Book Sir Higgins</button>
+      </div>
+    </article>
+
+    <article class="roster-card reveal">
+      <div class="roster-photo"><img src="images/shoebill-stork.webp" alt="Goliath the Shoebill Stork" loading="lazy"></div>
+      <div class="roster-body">
+        <div class="roster-title-row">
+          <h3>Goliath <span class="age">Age 9</span></h3>
+          <span class="price">$450/day</span>
+        </div>
+        <p class="species">Shoebill Stork</p>
+        <p class="desc">Motionless with an ancient aura of silent critique; ideal for weddings and stakeholder evaluations.</p>
+        <button class="btn btn-small btn-outline" data-book="Goliath the Shoebill Stork">Book Goliath</button>
+      </div>
+    </article>
+
+    <article class="roster-card reveal">
+      <div class="roster-photo"><img src="images/capybara.webp" alt="Barnaby the Capybara" loading="lazy"></div>
+      <div class="roster-body">
+        <div class="roster-title-row">
+          <h3>Barnaby <span class="age">Age 4</span></h3>
+          <span class="price">$250/day</span>
+        </div>
+        <p class="species">Capybara</p>
+        <p class="desc">King of calmness; floats peacefully, balances citrus, and lowers office stress by 85%.</p>
+        <button class="btn btn-small btn-outline" data-book="Barnaby the Capybara">Book Barnaby</button>
+      </div>
+    </article>
+
+    <article class="roster-card reveal">
+      <div class="roster-photo"><img src="images/pygmy-hippo.webp" alt="Penelope the Pygmy Hippo" loading="lazy"></div>
+      <div class="roster-body">
+        <div class="roster-title-row">
+          <h3>Penelope <span class="age">Age 3</span></h3>
+          <span class="price">$600/day</span>
+        </div>
+        <p class="species">Pygmy Hippo</p>
+        <p class="desc">Glamorous and highly hydrated; requires continuous misting and premium lettuce platters.</p>
+        <button class="btn btn-small btn-outline" data-book="Penelope the Pygmy Hippo">Book Penelope</button>
+      </div>
+    </article>
+
+    <div class="ad-slot ad-rectangle reveal" aria-label="Advertisement">
+      <span class="ad-tag">Advertisement</span>
+      <span class="ad-dims">300 × 250</span>
+      <span class="ad-cta">Ad slot</span>
+    </div>
+
+    <article class="roster-card reveal">
+      <div class="roster-photo"><img src="images/three-toed-sloth.webp" alt="Sir Lance the Three-Toed Sloth" loading="lazy"></div>
+      <div class="roster-body">
+        <div class="roster-title-row">
+          <h3>Sir Lance <span class="age">Age 7</span></h3>
+          <span class="price">$180/day</span>
+        </div>
+        <p class="species">Three-Toed Sloth</p>
+        <p class="desc">Sir Lance completely disrupts hyper-capitalist speed by existing at 0.02 miles per hour. Ideal for high-intensity engineering environments requiring perspective shifts.</p>
+        <button class="btn btn-small btn-outline" data-book="Sir Lance the Three-Toed Sloth">Book Sir Lance</button>
+      </div>
+    </article>
+
+    <article class="roster-card reveal">
+      <div class="roster-photo"><img src="images/pleco-fish.png" alt="Admiral Pleco" loading="lazy"></div>
+      <div class="roster-body">
+        <div class="roster-title-row">
+          <h3>Admiral Pleco <span class="age">Age 2</span></h3>
+          <span class="price">$150/day</span>
+        </div>
+        <p class="species">Pleco</p>
+        <p class="desc">Equipped with custom boots, this rare walking pleco meticulously patrols your event floors to vacuum up negativity. A mesmerizing, low-altitude addition to any highlight reel.</p>
+        <button class="btn btn-small btn-outline" data-book="Admiral Pleco">Book Admiral Pleco</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="page" id="page-pricing" data-page="pricing">
+  <div class="page-heading reveal">
+    <p class="eyebrow">Pricing</p>
+    <h1>Membership Structures for Every Weirdness Level</h1>
+  </div>
+
+  <div class="pricing-grid">
+    <div class="price-card reveal">
+      <h3>Casual Companion</h3>
+      <p class="price-blurb">Perfect for infrequent eccentric gatherings or subtle structural office placement.</p>
+      <p class="price-amount">$199<span>/mo</span></p>
+      <ul class="price-list">
+        <li>1 Companion Deployment / mo</li>
+        <li>4-Hour Total Event Block</li>
+        <li>Standard Chauffeur Delivery</li>
+        <li>Licensed Handler Overseer</li>
+      </ul>
+      <button class="btn btn-outline btn-full" data-plan="Casual Companion — $199/mo">Choose</button>
+    </div>
+
+    <div class="price-card price-featured reveal">
+      <span class="popular-badge">Most Popular</span>
+      <h3>Bizarre Aficionado</h3>
+      <p class="price-blurb">Our flagship structure built for ongoing corporate alignment and routine mental decompression.</p>
+      <p class="price-amount">$499<span>/mo</span></p>
+      <ul class="price-list">
+        <li>3 Companion Deployments / mo.</li>
+        <li>Full 8-Hour Business Block</li>
+        <li>Luxury Misted Transport Delivery</li>
+        <li>Priority Calendar Scheduling</li>
+        <li>Enhanced $2M Liability Policy</li>
+      </ul>
+      <button class="btn btn-solid btn-full" data-plan="Bizarre Aficionado — $499/mo">Choose</button>
+    </div>
+
+    <div class="price-card reveal">
+      <h3>Exotic Emperor</h3>
+      <p class="price-blurb">For maximum sovereign weirdness demands, round-the-clock bookkeeping, and VIP staging.</p>
+      <p class="price-amount">$999<span>/mo</span></p>
+      <ul class="price-list">
+        <li>Unlimited Monthly Bookings</li>
+        <li>Multi-Day Overnight Deployments</li>
+        <li>24/7 Concierge Hotline Access</li>
+        <li>Custom Catering &amp; Hydration Requests</li>
+        <li>Top-Tier Bookkeeping Certified</li>
+      </ul>
+      <button class="btn btn-outline btn-full" data-plan="Exotic Emperor — $999/mo">Choose</button>
+    </div>
+  </div>
+
+  <div class="ad-slot ad-leaderboard reveal" aria-label="Advertisement">
+    <span class="ad-tag">Advertisement</span>
+    <span class="ad-dims">728 × 90</span>
+    <span class="ad-cta">Ad slot — replace with your ad network's code</span>
+  </div>
+</section>
+
+<!-- ============ ABOUT US ============ -->
+<section class="page" id="page-about" data-page="about">
+  <div class="about-grid">
+    <div class="about-copy reveal">
+      <p class="about-intro">BizarreRental™ emerged from a groundbreaking hypothesis: human social spaces are dangerously conventional. Traditional corporate events focus on dry milestones; traditional weddings rely on typical aesthetics. We discovered that inserting a silent, highly judging 4-foot shoebill stork into the environment generates immediate social intrigue and memorable psychological formatting.</p>
+      <p class="about-intro">Today, our elite herd consists of 85 highly socialized, non-human companions meticulously preserved across certified wildlife networks. As an integrated subsidiary of the PlecoTrek™ premium experiences family, we hold ourselves to rigorous animal welfare frameworks while expanding human eccentric limits.</p>
+      <div class="about-photo">
+        <img src="images/emperor-tamarin.webp" alt="Sir Higgins the founding tamarin" loading="lazy">
+      </div>
+    </div>
+    <div class="about-history reveal">
+      <h2>Our history<br>beginning in berlin</h2>
+      <ul class="timeline">
+        <li>
+          <span class="timeline-year">1987</span>
+          <p>Founded by eccentric curator Barnaby Bellingham in Berlin with a lone mustached tamarin.</p>
+        </li>
+        <li>
+          <span class="timeline-year">1999</span>
+          <p>Acquired full federal licenses for high-end migratory bird transport and exotic primate management.</p>
+        </li>
+        <li>
+          <span class="timeline-year">2014</span>
+          <p>Passed 30,000 successful corporate board audits and abolished mandatory banana safety deposits.</p>
+        </li>
+        <li>
+          <span class="timeline-year">2024</span>
+          <p>Opened a five-star luxury retreat exclusively for overworked corporate parrots in the heart of Kreuzberg.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="page" id="page-faq" data-page="faq">
+  <div class="page-heading reveal">
+    <p class="eyebrow">FAQ</p>
+    <h1>Frequently Asked Questions</h1>
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item reveal open">
+      <button class="faq-q">
+        <span>Are your companions secure inside delicate indoor corporate spaces?</span>
+        <span class="faq-toggle">＋</span>
+      </button>
+      <div class="faq-a">
+        <p>Unequivocally. Every companion undergoes an intensive 18-month socialization curriculum. They are house-trained, safe around crowd densities, sound-insensitive, and fully vetted. Furthermore, an expert professional handler stays on-site at all times to manage behavioral boundaries.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q">
+        <span>How does the automated white-glove transport vehicle function?</span>
+        <span class="faq-toggle">＋</span>
+      </button>
+      <div class="faq-a">
+        <p>We arrive in a customized, climate-stabilized transport shuttle. The inner chamber deploys micro-climate misting for hippos, soft tree scaffolding for sloths, and organic refreshment spreads designed by specialized avian and mammalian dietary experts.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q">
+        <span>What does your global insurance and liability standard cover?</span>
+        <span class="faq-toggle">＋</span>
+      </button>
+      <div class="faq-a">
+        <p>We run a premier $2M comprehensive liability wrapper. This explicitly shields your organization against sudden spatial property damages, unpredictable fresh produce transport interruptions, and transient social awkwardness triggered by unblinking storks.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q">
+        <span>Can we change the companion's attire or natural hair grooming?</span>
+        <span class="faq-toggle">＋</span>
+      </button>
+      <div class="faq-a">
+        <p>We adhere strictly to sanctuary safety guidelines. While we meticulously brush Professor Higgins' mustache and allow customized lemons to sit on Barnaby's head during warm aquatic events, we strictly prohibit custom outfits that restrain an animal's locomotion or wingspan.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ad-slot ad-rectangle reveal" aria-label="Advertisement" style="margin-top:40px;">
+    <span class="ad-tag">Advertisement</span>
+    <span class="ad-dims">300 × 250</span>
+    <span class="ad-cta">Ad slot</span>
+  </div>
+</section>
+
+<!-- ============ BOOK NOW ============ -->
+<section class="page" id="page-book" data-page="book">
+  <div class="book-grid">
+
+    <div class="addon-card reveal">
+      <p class="addon-kicker">✦ &nbsp; BizarreRental™ Premium Companion Add-On &nbsp; ✦</p>
+      <h2>Add a Capybara</h2>
+      <p class="addon-tag">Because every event deserves a little emotional support and a lot more weird.</p>
+      <div class="addon-photo">
+        <img src="images/capybara.webp" alt="Barnaby the Capybara wearing a bow tie">
+      </div>
+      <p class="addon-copy">Upgrade your booking with Barnaby the Capybara — our citrus-balanced ambassador of calm. Perfect for office morale, awkward weddings, gallery openings, and suspiciously tense board meetings.</p>
+      <ul class="addon-list">
+        <li>Handler included</li>
+        <li>Climate-controlled transport</li>
+        <li>Office-safe serenity</li>
+      </ul>
+      <button class="btn btn-solid btn-full" id="addCapybaraBtn">Add To Booking</button>
+    </div>
+
+    <div class="book-col-side">
+      <div class="office-hub reveal">
+        <h3>Office Hub</h3>
+        <p>Wunderstraße 001<br>0115 Berlin, Germany</p>
+        <h4>Direct hotlines</h4>
+        <p>Office Phone: 1-800-555-ODDITY<br>Capybara Hot Tub SOS: Ext. 4</p>
+        <h4>Eco Investment</h4>
+        <p>Every single transaction feeds directly back into wildlife preservation. 15% of gross revenues are explicitly channeled to global swamp restoration efforts and sanctuary networks.</p>
+      </div>
+
+      <div class="ad-slot ad-rectangle reveal" aria-label="Advertisement">
+        <span class="ad-tag">Advertisement</span>
+        <span class="ad-dims">300 × 250</span>
+        <span class="ad-cta">Ad slot</span>
+      </div>
+    </div>
+
+    <form class="booking-form reveal" id="bookingForm">
+      <div class="company-toggle">
+        <label class="toggle-label">
+          <input type="checkbox" id="companyToggle">
+          <span>Booking as a company?</span>
+        </label>
+      </div>
+
+      <div class="form-row">
+        <input type="text" id="firstName" placeholder="First name" required>
+        <input type="text" id="surname" placeholder="Surname" required>
+      </div>
+
+      <div class="company-field" id="companyField">
+        <input type="text" id="companyName" placeholder="Company name">
+      </div>
+
+      <select id="animalChoice" required>
+        <option value="" disabled selected>Bizarre animal of choice</option>
+        <option>Sir Higgins the Emperor Tamarin</option>
+        <option>Goliath the Shoebill Stork</option>
+        <option>Barnaby the Capybara</option>
+        <option>Penelope the Pygmy Hippo</option>
+        <option>Sir Lance the Three-Toed Sloth</option>
+        <option>Admiral Pleco</option>
+      </select>
+
+      <input type="text" id="occasion" placeholder="Occasion Architecture">
+
+      <textarea id="notes" placeholder="Notes..."></textarea>
+
+      <div id="selectedPlanNote" class="selected-plan-note" hidden></div>
+      <div id="capybaraAddonNote" class="selected-plan-note" hidden>✓ Barnaby the Capybara added to booking</div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn-outline" id="undoBooking">Undo booking</button>
+        <button type="submit" class="btn btn-solid" id="lockItIn">
+          <svg viewBox="0 0 40 40" width="18" height="18" style="vertical-align:-3px;margin-right:6px;">
+            <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 28c0-8 4-14 6-16"/><path d="M14 12c1-3 3-4 5-4s4 1 5 4"/>
+              <circle cx="19" cy="10" r="1.3" fill="currentColor" stroke="none"/>
+              <path d="M12 28c0-6 3-11 7-12 4 1 7 6 7 12"/>
+            </g>
+          </svg>
+          Lock it in
+        </button>
+      </div>
+    </form>
+
+  </div>
+</section>
+
+<!-- ============ DONATE ============ -->
+<section class="page" id="page-donate" data-page="donate">
+  <div class="donate-wrap reveal">
+    <p class="eyebrow-pill">Keep The Weird Alive</p>
+    <p class="donate-copy">Your donation helps support the sanctuaries, rescue networks and conservation projects behind BizarreRental™.</p>
+
+    <div class="donate-tiers" id="donateTiers">
+      <button class="donate-tier" data-amount="5"><strong>$5</strong> — snacks, enrichment &amp; tiny necessities</button>
+      <button class="donate-tier" data-amount="15"><strong>$15</strong> — habitat care and veterinary supplies</button>
+      <button class="donate-tier" data-amount="30"><strong>$30</strong> — rescue transport and rehabilitation</button>
+      <button class="donate-tier" data-amount="75"><strong>$75</strong> — helps fund long-term sanctuary care</button>
+    </div>
+
+    <p class="donate-footnote">100% of direct donations go toward animal welfare and conservation initiatives and people in need.</p>
+
+    <button class="btn btn-solid btn-lg" id="donateNowBtn">Donate Now</button>
+  </div>
+</section>
+
+<!-- ============ 404 / OFFLINE + GAME ============ -->
+<section class="page" id="page-offline" data-page="offline">
+  <div class="offline-grid">
+    <div class="offline-card reveal">
+      <div class="mini-mascot">
+        <svg viewBox="0 0 40 40" width="30" height="30"><g fill="none" stroke="#1B3B54" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 28c0-8 4-14 6-16"/><path d="M14 12c1-3 3-4 5-4s4 1 5 4"/><circle cx="19" cy="10" r="1.4" fill="#1B3B54" stroke="none"/><path d="M12 28c0-6 3-11 7-12 4 1 7 6 7 12"/></g></svg>
+      </div>
+      <h1>You're offline!</h1>
+      <p>It looks like your internet connection has gone feral. Our premium bizarre companions need a stable network to beam their majestic auras to your device.</p>
+      <p>Check your connection while Sir Lance the Sloth manually delivers your network packets at approximately sloth speed.</p>
+      <div class="sloth-illustration">🦥</div>
+      <button class="btn btn-outline" id="tryAgainBtn">Try again</button>
+    </div>
+
+    <div class="game-card reveal">
+      <p class="game-kicker">Fancy a game while you wait?</p>
+      <h2>Flappy Goliath</h2>
+      <canvas id="flappyCanvas" width="420" height="480"></canvas>
+      <button class="btn btn-solid" id="playGameBtn">Play</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ SITEWIDE AD SLOT (shows on every page) ============ -->
+<div class="ad-sitewide-wrap">
+  <div class="ad-slot ad-sitewide reveal" aria-label="Advertisement">
+    <span class="ad-tag">Advertisement</span>
+    <span class="ad-dims">970 × 90</span>
+    <span class="ad-cta">Sitewide ad slot — replace with your ad network's code</span>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">BizarreRental<sup>®</sup></div>
+    <nav class="footer-links">
+      <a href="#/home" data-nav>Home</a>
+      <a href="#/roster" data-nav>Our Roster</a>
+      <a href="#/pricing" data-nav>Pricing</a>
+      <a href="#/about" data-nav>About Us</a>
+      <a href="#/faq" data-nav>FAQ</a>
+      <a href="#/book" data-nav>Book Now</a>
+      <a href="#/donate" data-nav>Donate</a>
+    </nav>
+    <p class="footer-fine">© 1987–2026 BizarreRental™, a PlecoTrek™ company. All companions rented responsibly. &nbsp;·&nbsp; <a href="#/oddities-that-dont-exist" data-nav>Simulate offline page</a></p>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- Confirmation modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">×</button>
+    <div class="modal-icon" id="modalIcon">🎉</div>
+    <h3 id="modalTitle">Booking Locked In!</h3>
+    <p id="modalBody">Our Weirdness Hotline will confirm delivery details shortly.</p>
+    <button class="btn btn-solid" id="modalOkBtn">Great, thanks!</button>
+  </div>
+</div>
+
+<canvas id="confettiCanvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
